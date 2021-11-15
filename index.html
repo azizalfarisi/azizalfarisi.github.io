@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <title>My Recipe</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="icon" href="logo-black.png" type="image/x-icon" sizes="16x16" />
+  <style>
+    /* CSS Template */
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Montserrat", sans-serif;
+    }
+    .w3-row-padding img {
+      margin-bottom: 12px;
+    }
+    .w3-sidebar {
+      width: 120px;
+      background: #222;
+    }
+    #main {
+      margin-left: 120px;
+    }
+    /* End CSS Template */
+    /* Manual Control */
+    nav {
+      box-sizing: border-box;
+    }
+    nav img {
+      margin: 10px 0px;
+    }
+    #main #home h1 {
+      font-weight: bold;
+    }
+    iframe {
+      margin-top: 10px;
+    }
+    #about p {
+      text-align: justify;
+    }
+    .crossed-word {
+      text-decoration: line-through;
+    }
+    #about #experience {
+      margin-top: 50px;
+    }
+    #question {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    /* End Manual Control */
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+      #main {
+        margin-left: 0;
+      }
+    }
+  </style>
+  <body class="w3-black">
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+      <!-- Icon image in top left corner -->
+      <img src="logo-white.png" style="width: 75%" />
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+      </a>
+      <a
+        href="#about"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>ABOUT</p>
+      </a>
+      <a
+        href="#recipe"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-eye w3-xxlarge"></i>
+        <p>RECIPE</p>
+      </a>
+      <a
+        href="#contact"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CONTACT</p>
+      </a>
+      <a
+        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+        target="blank_"
+      >
+        <p id="question">???</p>
+      </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+      <div
+        class="
+          w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small
+        "
+      >
+        <a href="#" class="w3-bar-item w3-button" style="width: 25% !important"
+          >HOME</a
+        >
+        <a
+          href="#about"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >ABOUT</a
+        >
+        <a
+          href="#recipe"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >RECIPE</a
+        >
+        <a
+          href="#contact"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >CONTACT</a
+        >
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+      <!-- Header/Home -->
+      <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <h1 class="w3-jumbo">
+          <span class="w3-hide-small">Welcome to My Recipe</span>
+        </h1>
+        <p>How to Make a Simple Pudding</p>
+        <hr />
+        <iframe
+          width="784"
+          height="441"
+          src="https://www.youtube.com/embed/jDyrLllr9n4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </header>
+
+      <!-- About Section -->
+      <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+        <h2 class="w3-text-light-grey">Introduction</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+        <p>Assalamu'alaikum wr. wb.</p>
+        <p>
+          Hello, my name is Aziz Alfarisi, my friends call me Faris (Not that I
+          have any). I am from 9B. Today, I will guide you on how to make a
+          simple pudding with minimal ingredients. If you haven't watched the
+          video yet, I will put the recipe for the pudding down in the recipe
+          section, but you should watch the video because
+          <span class="crossed-word">I need views and money</span>
+          the video will be easier to understand. That's about it for the
+          introduction, see ya soon!
+        </p>
+        <h2 class="w3-text-light-grey" id="experience">My Skills</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+        <p class="w3-wide">Web Design - 1/10</p>
+        <div class="w3-white experience-bar">
+          <div class="w3-dark-grey" style="height: 28px; width: 10%"></div>
+        </div>
+        <p class="w3-wide">Cooking - 0.7/10</p>
+        <div class="w3-white experience-bar">
+          <div class="w3-dark-grey" style="height: 28px; width: 7%"></div>
+        </div>
+        <p class="w3-wide">Video Editing - 0.1/10</p>
+        <div class="w3-white experience-bar">
+          <div class="w3-dark-grey" style="height: 28px; width: 1%"></div>
+        </div>
+        <p class="w3-wide">Cringe Jokes - 10/10</p>
+        <div class="w3-white experience-bar">
+          <div class="w3-dark-grey" style="height: 28px; width: 100%"></div>
+        </div>
+        <br />
+        <!-- End About Section -->
+      </div>
+
+      <!-- Recipe Section -->
+      <div class="w3-padding-64 w3-content" id="recipe">
+        <h2 class="w3-text-light-grey">My Recipe</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+        <div class="procedure">
+          <h4>A. Ingredients</h4>
+          <ul>
+            <li>1 bag of Silky Pudding powder</li>
+            <li>700 ml of water</li>
+          </ul>
+          <h4>B. Cookwares</h4>
+          <ul>
+            <li>Pot</li>
+            <li>Stove</li>
+            <li>Spoon</li>
+            <li>Serving cups</li>
+            <li>Measuring cup</li>
+          </ul>
+          <h4>C. Instructions</h4>
+          <ol>
+            <li>Pour the powder into the pot. Then, add 700ml of water</li>
+            <li>Stir the ingredients together</li>
+            <li>Switch on the stove. Cook the mixture and stir until boiled</li>
+            <li>
+              Switch off the stove and serve the mixture into the serving cups
+            </li>
+            <li>Chill the mixture until room temperature</li>
+            <li>Put the mixture into the refrigerator and cool for an hour</li>
+            <li>The pudding is ready to serve</li>
+          </ol>
+        </div>
+        <!-- End Recipe Section -->
+      </div>
+
+      <!-- Contact Section -->
+      <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-light-grey">Contact Me</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+
+        <div class="w3-section">
+          <p>
+            <i
+              class="
+                fa fa-map-marker fa-fw
+                w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity
+              "
+            ></i>
+            Surabaya, Indonesia
+          </p>
+          <p>
+            <i
+              class="
+                fa fa-phone fa-fw
+                w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity
+              "
+            ></i>
+            WA Number: +62 858-5361-2375
+          </p>
+          <p>
+            <i
+              class="
+                fa fa-envelope fa-fw
+                w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity
+              "
+            >
+            </i>
+            Email: alfarisi705031@gmail.com
+          </p>
+          <p>
+            <i
+              class="
+                fa fa-instagram fa-fw
+                w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity
+              "
+            >
+            </i>
+            Instagram: azizalfarisiwastaken
+          </p>
+        </div>
+        <br />
+        <!-- End Contact Section -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p class="w3-medium">
+          Powered by
+          <a
+            href="https://www.w3schools.com/w3css/default.asp"
+            target="_blank"
+            class="w3-hover-text-green"
+            >w3.css</a
+          >
+        </p>
+        <!-- End footer -->
+      </footer>
+
+      <!-- END PAGE CONTENT -->
+    </div>
+  </body>
+</html>
